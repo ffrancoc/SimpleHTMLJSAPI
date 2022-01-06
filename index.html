@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Rick and Morty </title>
+</head>
+
+<body class="bg-warning">
+    <div class="container-fluid">
+        <div class="row ms-3 me-3 mb-3 mt-2 shadow rounded p-2 bg-white">
+            <div class="row">
+                <div class="mb-4 mt-4 text-center">
+                    <img class="img-fluid" src="img/logo.png" alt="not found" width="500px" height="200px">
+                    <h6 class="mt-1">Powered By: <a href="https://rickandmortyapi.com">https://rickandmortyapi.com/</a>
+                    </h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-10 mt-2">
+                    <input class="form-control" type="text" placeholder="Nombre del personaje" id="nombre-personaje">
+                </div>
+                <div class="col-sm-12 col-md-2 mt-2 d-grid">
+                    <button class="btn btn-primary" id="btn-buscar">Buscar</button>
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col-sm-12 col-md-12 fw-bold">Encontrado: <span class="fw-normal"
+                        id="items-encontrados">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ms-3 me-3 mb-3 mt-2" id="resultados">
+
+        </div>
+
+    </div>
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>
